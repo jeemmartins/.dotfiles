@@ -1,0 +1,9 @@
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[push]
+	followTags = true
+[user]
+	email = jeemmartins@gmail.com
+	name = Jéssica Martins
