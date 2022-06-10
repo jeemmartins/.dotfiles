@@ -57,7 +57,7 @@ function TrimTrailingNewLine()
 endfunction
 
 " trim trailing whitespaces on save
-autocmd BufWritePre * :call TrimTrailingWhiteSpace()
+" autocmd BufWritePre * :call TrimTrailingWhiteSpace()
 
 " trim trailing new lines on save
-autocmd BufWritePre * :call TrimTrailingNewLine()
+" autocmd BufWritePre * :call TrimTrailingNewLine()
