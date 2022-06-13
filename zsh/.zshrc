@@ -28,7 +28,11 @@ if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-autosuggestions" ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions "${ZSH_CUSTOM}/plugins/zsh-autosuggestions"
 fi
 
-plugins=(zsh-syntax-highlighting zsh-autosuggestions)
+if [ ! -d "${ZSH_CUSTOM}/plugins/zsh-vi-mode" ]; then
+  git clone https://github.com/jeffreytse/zsh-vi-mode "${ZSH_CUSTOM}/plugins/zsh-vi-mode"
+fi
+
+plugins=(zsh-syntax-highlighting zsh-autosuggestions zsh-vi-mode)
 
 ZSH_CACHE_DIR="${HOME}/.cache/oh-my-zsh"
 
